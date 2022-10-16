@@ -25,8 +25,8 @@ h4 {
 }
 
 h5 {
-    font-size: 2.2vh;
-    font-weight: 200;
+    font-size: 1.2vw;
+    font-weight: 100;
 }
 
 h6 {
@@ -234,7 +234,7 @@ body {
 .content-button {
     width: fit-content;
     height: 100%;
-    background: rgb(10, 10, 10);
+    background: rgb(5, 5, 5);
     padding: 1vh;
     transition: 0.35s ease-in-out;
 }
@@ -252,4 +252,46 @@ body {
     width: 100%;
     height: 300px;
     background-color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-row {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin-top: 5vh;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-desc-logo {
+    width: 80px;
+    height: 40px;
+    background: url(CBXLOGO.svg) no-repeat;
+    background-size: contain;
+    margin-bottom: 2vh;
+}
+
+.footer-list {
+    margin-top: 4vh;
+    list-style: none;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-list a li {
+    margin-top: 1vh;
 }
