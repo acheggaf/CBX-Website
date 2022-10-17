@@ -13,7 +13,6 @@ h1 {
 
 h2 {
     font-size: 46px;
-    color: rgb(255, 255, 255);
 }
 
 h3 {
@@ -43,11 +42,10 @@ body {
     padding: 0;
     width: 100%;
     overflow: hidden;
-    background-color: rgb(245, 245, 245);
+    background-color: #fff;
 }
 
 #wrapper {
-    margin: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -109,11 +107,6 @@ body {
     top: 50px;
 }
 
-#waveform {
-    height: 100px;
-    width: 100px;
-}
-
 .TapeBanner {
     height: 75vh;
 }
@@ -123,7 +116,7 @@ body {
 }
 
 .TapeBanner {
-    background: url(Images/Banner2.jpg);
+    background: url(Images/Spirale.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -186,16 +179,81 @@ body {
     margin-top: 2vh;
 }
 
+#video-overlay-text {
+    font-size: 4.8vh;
+    font-weight: 800;
+    text-decoration: none;
+    color: #ffffff;
+}
+
 #content-section {
-    margin-top: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.tape-content {
+    background-color: rgb(0, 0, 0);
+    z-index: 5;
+    flex-direction: column;
+}
+
+.download-header {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vw 0px;
+}
+
+.dh-text {
+    position: absolute;
+    left: 3%;
+    font-size: 0.9vw;
+    font-weight: 100;
+}
+
 .mainPage {
+    margin-top: 100px;
     height: 600px;
+}
+
+.tape-content {
+    height: fit-content;
+    background-color: #ffffff;
+}
+
+#send-to-download {
+    font-size: 1.0vw;
+    position: absolute;
+    right: 5%;
+    background-color: #f3f3f3;
+    color: #222;
+    padding: 2px 5px;
+    border-radius: 0px;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+}
+
+#send-to-download:hover {
+    font-size: 1.0vw;
+    position: absolute;
+    right: 5%;
+    background-color: rgb(78, 173, 142);
+    color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 0px;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+.download-button {
+    height: 100%;
+    width: 100%;
 }
 
 .content-row {
@@ -313,4 +371,279 @@ body {
 
 .footer-list a li {
     margin-top: 1vh;
+}
+
+.center-content {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.fc-logo-container {
+    width: 40px;
+    height: 40px;
+    background: url(Images/CBXC.png) no-repeat;
+    background-size: contain;
+}
+
+.text1 {
+    width: 100%;
+    object-fit: contain;
+}
+
+.text11 {
+    background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+.text12 {
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    width: 50%;
+}
+
+.text2 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    font-weight: bolder;
+    position: relative;
+}
+
+.text2-container-dummy {
+    font-size: 3vw;
+    opacity: 0;
+}
+
+.text2-container {
+    font-size: 3vw;
+    position: absolute;
+    right: 0%;
+    color: #222;
+}
+
+.tape-image {
+    width: 100%;
+    height: fit-content;
+}
+
+.tape-image img {
+    width: 100%;
+    border-radius: 1vw;
+}
+
+.line-separator {
+    width: 50%;
+    height: 2px;
+    background-color: #222;
+}
+
+.first-line {
+    margin: 1vw 0vw 5vw 0vw;
+}
+
+.second-content {
+    margin-top: 4vw;
+    width: 100%;
+    height: fit-content;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+}
+
+.text3 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.8vw;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.characteristics {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.effect-charac {
+    width: 22vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 15vw;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charac-title {
+    color: #ffffff;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+}
+
+.chcarac-desc {
+    font-weight: bold;
+    font-size: 1vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+#wow-flutter-desc {
+    color: #43e97b;
+    background: linear-gradient(0deg, #43e97b 0%, #38f9d7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#distortion-desc {
+    color: #43e97b;
+    background: linear-gradient(0deg, #a18cd1 0%, #fbc2eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#noise-desc {
+    color: #ffb199;
+    background: linear-gradient(0deg, #ff0844 0%, #ffb199 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#reberb-desc {
+    color: #00f2fe;
+    background: linear-gradient(0deg, #4facfe 0%, #00f2fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#eq-desc {
+    color: #fff1eb;
+    background: linear-gradient(0deg, #fff1eb 0%, #ace0f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dynamics-desc {
+    color: #bbc1bf;
+    background: linear-gradient(0deg, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.third-content {
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    width: 100%;
+}
+
+.sound-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.sp-title {
+    margin-top: 2vh;
+    font-size: 2vw;
+    color: #ffffff;
+}
+
+.sp-desc {
+    margin: 4vh 0vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    background: linear-gradient(0deg, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sp-holder {
+    text-align: center;
+    margin: 0vw 2vw;
+}
+
+.sp-holder-title {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 2vw 0vw;
+}
+
+.fourth-content {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.fc-title {
+    margin-top: 20px;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #222;
+    background: linear-gradient(0deg, #6a11cb 0%, #2575fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fc-desc {
+    font-size: 1.0vw;
+    font-weight: normal;
+    color: #222;
+    margin: 1vh 0vh;
+}
+
+.download-section {
+    width: 100%;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.windows-button {
+    background: url(Images/windows-button.png) no-repeat;
+    background-size: contain;
+    width: 20vh;
+    height: 10vw;
+    margin-right: 2vw;
+}
+
+.macos-button {
+    background: url(Images/mac-button.png) no-repeat;
+    background-size: contain;
+    width: 20vh;
+    height: 10vw;
+    margin-left: 2vw;
 }
