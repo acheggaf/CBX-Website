@@ -73,7 +73,7 @@ body {
 }
 
 #logo-container {
-    background: url(CBXLOGO.svg) no-repeat top left;
+    background: url(Images/CBXLOGO.svg) no-repeat top left;
     background-size: contain;
     height: 100%;
     width: 55px;
@@ -104,12 +104,28 @@ body {
 
 #mainBanner {
     width: 100%;
-    height: 80vh;
-    background: url(CBXBA.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     background-position: center;
+    top: 50px;
+}
+
+#waveform {
+    height: 100px;
+    width: 100px;
+}
+
+.TapeBanner {
+    height: 75vh;
+}
+
+.indexBanner {
+    height: 80vh;
+}
+
+.TapeBanner {
+    background: url(Images/Banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #videoPlayer {
@@ -173,10 +189,13 @@ body {
 #content-section {
     margin-top: 100px;
     width: 100%;
-    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mainPage {
+    height: 600px;
 }
 
 .content-row {
@@ -277,7 +296,7 @@ body {
 .footer-desc-logo {
     width: 80px;
     height: 40px;
-    background: url(CBXLOGO.svg) no-repeat;
+    background: url(Images/CBXLOGO.svg) no-repeat;
     background-size: contain;
     margin-bottom: 2vh;
 }
