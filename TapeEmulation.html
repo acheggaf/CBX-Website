@@ -30,13 +30,13 @@
                 <div class="line3"></div>
             </div>
             <div id="navbar">
-                <a href="#">
+                <a href="index.html">
                     <div id="logo-container">
                     </div>
                 </a>
                 <div id="link-bar-wrapper">
-                    <a href="#" onclick="return false;">Products</a>
-                    <a href="#" onclick="return false;">CONTACT</a>
+                    <a href="Products.html">Products</a>
+                    <a href="Contact.html">CONTACT</a>
                     <a href="#" onclick="return false;">ABOUT</a>
                 </div>
             </div>
@@ -100,13 +100,18 @@
                     </div>
 
 
-                    <div class="line-separator first-line" data-aos="fade-up" data-aos-duration="800"></div>
+                    <div class="line-separator first-line" data-aos="fade-in" data-aos-offset="100" data-aos-duration="800"></div>
                 </div>
 
 
                 <div class="text2">
-
-                    <div class="text2-container" data-aos="fade-left" data-aos-duration="500">
+                    <div class="text21-container" data-aos="fade-right" data-aos-duration="500">
+                        GET CREATIVE.
+                    </div>
+                    <div class="text21-container-dummy">
+                        GET CREATIVE.
+                    </div>
+                    <div class="text2-container" data-aos="fade-left" data-aos-offset="400" data-aos-duration="500">
                         GET THAT OLD TAPE FEELING.
                     </div>
                     <div class="text2-container-dummy">
@@ -195,26 +200,13 @@
 
             </div>
             <div class="third-content">
-                <div class="sound-preview" data-aos="fade-up" data-aos-duration="800">
+                <div class="sound-preview">
                     <div class="sp-title">Sound Preview</div>
                     <div class="sp-desc">Using the default Preset without Distortion.</div>
-                    <iframe width="50%" height="fit-content" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1514218360&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <iframe width="50%" height="400px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1514218360&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                     <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/cbx-sc" title="CBX" target="_blank" style="color: #cccccc; text-decoration: none;">CBX</a> · <a href="https://soundcloud.com/cbx-sc/sets/cbx-tape-emulation" title="CBX Tape Emulation" target="_blank"
                             style="color: #cccccc; text-decoration: none;">CBX Tape Emulation</a></div>
-                    <div class="sp-menu">
-                        <div class="sp-holder">
-                            <div class="sp-holder-title">Original (No effect)</div>
-                            <audio id="player1" controls>
-                                <source src="Sound/DLO.mp3" type="audio/mp3" />
-                            </audio>
-                        </div>
-                        <div class="sp-holder">
-                            <div class="sp-holder-title">Processed (With effect)</div>
-                            <audio id="player2" controls>
-                                <source src="Sound/DLP.mp3" type="audio/mp3" />
-                            </audio>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>
@@ -291,10 +283,7 @@
 
 
     </div>
-    <script src="path/to/plyr.js"></script>
     <script>
-        const player1 = new Plyr('#player1');
-        const player2 = new Plyr('#player2');
         AOS.init();
     </script>
 
