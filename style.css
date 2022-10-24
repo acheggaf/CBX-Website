@@ -119,6 +119,12 @@ body {
     background-size: cover;
 }
 
+.aboutBanner {
+    background: url(Images/About.jpg);
+    height: 80vh;
+    background-size: cover;
+}
+
 .TapeBanner {
     height: 90vh;
 }
@@ -404,6 +410,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.contact-content {
+    height: 80vh;
+    justify-content: start
+}
+
+.contact-social-media a {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-social-media a i {
+    font-size: 5vh;
+    margin-right: 1vw;
 }
 
 .first-content {
@@ -1035,4 +1058,25 @@ body {
     margin: 2vw;
     font-size: 2vw;
     font-weight: 500;
+}
+
+.contact-title {
+    width: 80%;
+    margin: 1vw 0vw;
+    font-size: 10vh;
+    font-weight: 900;
+}
+
+.contact-email {
+    width: 80%;
+    margin: 1vw 0vw;
+    font-size: 5vh;
+    font-weight: 100;
+    word-break: break-all;
+}
+
+.line-sep-contact {
+    height: 4px;
+    width: 100%;
+    background-color: #000000;
 }
